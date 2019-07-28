@@ -1,0 +1,4 @@
+requests
+docker==3.7.0
+sanic==19.3.1
+
