@@ -19,7 +19,7 @@ ctoken = os.environ.get('CONFIGPROXY_AUTH_TOKEN')
 def start_notebook(user):
     labels = {
        'us.kbase.user': user,
-       'us.kbase.narrative': True,
+       'us.kbase.type': 'narrative',
     }
     container=dock.containers.run(image, auto_remove=True, detach=True)
     poll = True
